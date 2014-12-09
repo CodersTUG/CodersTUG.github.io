@@ -1,0 +1,138 @@
+/* outer */
+#outer {
+	
+	&.home {
+		
+		#header {
+			z-index:4;
+			position:fixed;	
+			}
+			
+		#main {
+			padding-top:@height-header;
+			z-index:3;
+			position:relative;	
+		}	
+		
+	}
+	
+}
+/* header */
+#header {
+	height:@height-header;
+	background:@green;
+	border-bottom:1px solid @white;
+	width:100%;
+	
+	#site-link {
+		background:url(../images/logo.png) no-repeat;
+		width:194px;
+		height:29px;
+		display:block;
+		position:absolute;
+		left:0;
+		top:0;
+		margin:25px 0 0 15px;
+		z-index:9;
+		text-indent:-9999px;	
+	}
+	
+	#block-choose-languages {
+		position:absolute;
+		top:0;
+		right:0;
+		margin-top:6px;
+		margin-right:15px;
+				
+			ul {
+				.padding-margin-reset();
+				
+				li {
+					list-style:none;
+					display:inline;
+					
+					&.active {
+					
+						a {
+							border:1px solid @white;	
+							z-index:2;
+						}	
+						
+					}
+					
+					a {
+						display:inline-block;
+						font-family:@font2;
+						text-transform:uppercase;
+						color:@white;
+						font-size:16px;
+						padding:3px 12px 0 12px;
+						line-height:20px;
+						border:1px solid @green;
+						cursor:pointer;
+						float:left;
+						.transition();						
+											
+						&.active, &:hover {
+							border:1px solid @white;
+							text-decoration:none;
+							z-index:2;
+							}
+							
+					}
+					
+				}
+					
+			}
+		
+		}
+	
+	#menu {	
+		position:absolute;
+		top:0;
+		right:0;
+		margin:40px 0 0 0;
+		
+		ul {
+			.padding-margin-reset();
+			
+			li {
+				display:inline;
+				
+				a {
+					display:inline-block;
+					font-family:@font2;
+					text-transform:uppercase;
+					color:@white;
+					font-size:20px;
+					padding:4px 12px 0 12px;
+					line-height:25px;
+					border:1px solid @green;
+					cursor:pointer;
+					float:left;
+					.transition();
+										
+					&.active, &:hover {
+						border:1px solid @white;
+						text-decoration:none;
+						z-index:2;
+						}
+						
+				}
+					
+			}
+				
+		}
+			
+	}
+	
+}
+/* main */
+#main {	
+}
+/* footer */
+#footer {
+	min-height:130px;
+	background:@white;
+	padding-top:25px;
+}

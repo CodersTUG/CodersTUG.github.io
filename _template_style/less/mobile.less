@@ -1,0 +1,569 @@
+/* tablet */ 
+@media (max-width: 979px) {
+
+body {
+	padding:0;
+}
+
+#header {
+	min-height:@height-header;
+	height:auto;
+	position:relative;
+	
+	.nav-collapse {
+		
+		&.close-menu {
+			height:0!important;
+		}
+			
+	}	
+		
+	
+	.show-nav-for-iphone {
+	  display:block;
+	  position:absolute;
+	  left:0;
+	  top:0px;
+	  border:0;
+	  color:#fff; 
+	  z-index:9999;
+	  margin-top:0;
+	  .border-radius(0px);
+	  background:none;
+	  display:inline-block;	 
+	  text-decoration:none;
+	  cursor:pointer;	 
+	  margin-left:0;
+	  text-align:center;
+	  margin-left:15px;
+	  text-transform: uppercase;
+	  margin-top:26px;
+	  font-family:@font2;
+	  text-transform:uppercase;
+	  color:@white;
+	  font-size:16px;
+	  padding:3px 12px 0 12px;
+	  line-height:20px;
+	  border:1px solid @white;
+	}	
+	
+	#site-link {
+		margin-left:-97px;
+		left:50%;
+		}
+		
+	#block-choose-languages {
+		margin-right:0;
+		margin-top:26px;
+		}		
+	
+	#menu {	
+		position:relative;
+		margin:80px auto 0 auto;
+		width:180px;
+		
+		ul {
+			.padding-margin-reset();
+			
+			li {
+				display:block;
+				
+				a {
+					display:block;					
+					font-family:@font2;
+					text-transform:uppercase;
+					color:@white;
+					font-size:20px;
+					padding:4px 12px 0 12px;
+					line-height:25px;
+					border:1px solid @green;
+					cursor:pointer;
+					float:none;
+					.transition();
+					text-align:center;
+					margin-bottom:10px;
+										
+					&.active, &:hover {
+						border:1px solid @white;
+						text-decoration:none;
+						z-index:2;
+						}
+						
+				}
+					
+			}
+				
+		}
+			
+	}		
+	
+}
+	
+.block-item-post {
+	
+	&.same-height {		
+		min-height:500px;
+		position:relative;		
+		
+		.link-btn {
+			position:absolute;
+			bottom:0;
+			left:50%;
+			margin-left:-40px!important;	
+		}	
+		
+	}
+	
+}	
+
+.module-row.partner {
+	
+	img {
+		margin-bottom:10px;
+		margin-right:10px!important;	
+	}
+	
+}
+
+.block-item-post {
+	
+	&.featured {
+		
+		figure {
+			float:none;
+			display:block;
+			margin:0 auto;
+			margin-bottom:15px;	
+			}
+		
+	}
+	
+	.block-title {
+		display:block;
+		text-align:center;	
+	}
+	
+}
+
+.main-archive-list {
+	
+.block-item-post {	
+	
+	figure {
+	float:none;
+	display:block;
+	margin:0 auto;
+	margin-bottom:15px;	
+	}
+	
+	.link-btn  {
+		margin-left:auto!important;
+		margin-right:auto!important;
+		display:block;
+		width:80px;
+	}
+	
+}
+	
+}
+
+.block-main-article {
+		
+	.content-galleria-io {
+		float:none;
+		width:100%;
+		margin-bottom:15px;
+		}
+	
+}
+	
+/* block-text-scroll-bar */
+.block-text-scroll-bar {
+	overflow:auto;
+	height:auto;
+}	
+	 
+/* module-banner-video */
+.module-banner-video {
+	height:427px;	 
+}
+
+.module-archive-item-post, .main-archive-list {
+		
+	.block-item-post {
+	
+		.block-title, .block-info {
+			text-align:center;
+			display:block;			
+		}	
+		
+		figure {
+	float:none;
+	display:block;
+	margin:0 auto;
+	margin-bottom:15px;
+	width:100%;
+	max-width:170px;
+		
+		img {
+			display:block;
+			margin:0 auto;
+			
+		}
+		
+	}
+		
+	}
+	
+}
+
+}
+
+@media (max-width: 768px) {
+
+img.alignnone,
+img.alignleft,
+img.alignright,
+img.aligncenter {
+	height:auto!important;
+	}	
+	
+	
+	
+		
+}
+
+@media (max-width: 610px) {
+
+/* wp-pagenavi */
+		
+.wp-pagenavi {
+	
+	a, span {
+	text-decoration: none;
+	background-color:@gray;
+	color:#fff;
+	padding:8px 8px;
+	margin-right:4px;
+	border:0;
+	font-size:14px;
+	border:0;	
+	}
+		
+	.pages, .nextpostslink, .last {
+	
+	display:none;
+	
+	}
+	
+}
+
+.module-main-banner {	
+	height:565px;
+		
+	.block-slogan {
+		position:absolute;
+		left:50%;
+		top:0;
+		margin:180px 0 0 -316px;
+	}
+}
+
+.module-archive-item-post {
+	
+	.block-item-post {
+	
+		.block-title {
+			text-align:left;			
+		}	
+		
+	}
+	
+}
+
+.module-sub-banner {
+	height:365px;
+	background-size:cover!important;
+	background-repeat:no-repeat!important;
+}
+
+.box-width {
+	float:none;
+	width:100%;
+	display:block;
+	margin:0 auto;
+	margin-bottom:15px;
+	height:auto!important;
+	min-height:inherit!important;
+
+	&.same-height {
+		padding-bottom:15px;
+		margin-bottom:30px;
+		
+			.link-btn  {
+				margin-left:auto!important;
+				margin-right:auto!important;
+				display:block;
+				width:80px;
+				position:relative;
+				left:auto;
+			}
+		
+		}
+
+}
+	
+.block-item-post {
+	
+	.simple-list {
+		display:block;
+		margin:0 auto;
+		text-align:center;
+		}
+	
+}
+
+.main-archive-list {
+	
+.block-item-post {	
+	
+	.block-info {
+		display:block;
+		text-align:center;
+		}
+	
+	figure {
+	float:none;
+	display:block;
+	margin:0 auto;
+	margin-bottom:15px;
+	width:100%;
+	max-width:300px;
+		
+		img {
+			display:block;
+			margin:0 auto;
+			
+		}
+		
+	}
+	
+}
+	
+}
+	
+	
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+
+.main-archive-list {
+	
+	.block-item-post {
+	
+		.block-title, .block-info {
+			text-align:center;
+			display:block;			
+		}	
+		
+		figure {
+	float:none;
+	display:block;
+	margin:0 auto;
+	margin-bottom:15px;
+	width:100%;
+	max-width:170px;
+		
+		img {
+			display:block;
+			margin:0 auto;
+			
+		}
+		
+	}
+		
+	}
+	
+}
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+
+.animation {
+	.opacity(1);
+	.transition(0);			
+		
+	&.on {
+		.opacity(1);						
+		}	
+
+}
+	
+}
+
+/* smarthpone */
+@media (max-width: 480px) {
+
+img.alignnone,
+img.alignleft,
+img.alignright,
+img.aligncenter {
+	height:auto!important;
+	}
+	
+.block-slogan {
+	display:none!important;
+}	
+	
+.module-sub-banner {
+	height:300px;
+}	
+				
+}
+
+/* iPhone (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+
+.animation {
+	.opacity(1);
+	.transition(0);			
+		
+	&.on {
+		.opacity(1);						
+		}	
+
+}
+
+.form-box {
+	
+	table {
+		
+		td {
+			width:100%;
+			display:block;
+			
+			input[type="text"] {
+				margin-right:0;
+				.input-style(100%)!important;					
+				
+				&.no-margin-right {
+					margin-right:0!important;
+					.input-style(100%);	
+					}
+				
+			}
+			
+		}
+	
+	}
+	
+}
+
+#header {
+	min-height:110px;
+	height:auto;
+	
+	.show-nav-for-iphone {
+		margin-top:70px;
+		}
+		
+	#block-choose-languages {
+		margin-right:0;
+		margin-top:70px;
+		}
+		
+	#menu {	
+		position:relative;
+		margin:120px auto 0 auto
+		
+	}
+	
+}
+
+.module-main-banner {	
+	height:665px;
+	}
+	
+.module-row.partner {
+	
+	img {
+		margin-bottom:10px;
+		margin-right:auto!important;
+		display:block;	
+		float:none;
+		margin-left:auto;
+	}
+	
+}	
+
+.block-item-post {
+	
+	.simple-list {
+		display:block;
+		margin:0 auto;
+		text-align:center;
+		
+			li {
+				list-style:none;	
+			}
+		
+		}
+	
+}
+
+.module-archive-item-post {
+	
+	.block-item-post {
+	
+		.block-title, .block-info {
+			text-align:center;
+			display:block;			
+		}	
+		
+		figure {
+	float:none;
+	display:block;
+	margin:0 auto;
+	margin-bottom:15px;
+	width:100%;
+	max-width:170px;
+		
+		img {
+			display:block;
+			margin:0 auto;
+			
+		}
+		
+	}
+		
+	}
+	
+}
+
+}
+
+/* iPhone (landscape) ----------- */
+@media only screen 
+and (max-width : 480px) {
+
+.animation {
+	.opacity(1);
+	.transition(0);			
+		
+	&.on {
+		.opacity(1);						
+		}	
+
+}
+	
+}
