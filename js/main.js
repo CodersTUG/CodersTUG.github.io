@@ -182,7 +182,8 @@ $('.js-atomic-animation').bind('inview', function(e, isInView, visiblePartX, vis
 
 /* SBLOCCA PER ATTIVARE */
 // scrollbar documentation http://manos.malihu.gr/jquery-custom-content-scroller/
-$(".block-text-scroll-bar").mCustomScrollbar({
+var scrollBar = $(".block-text-scroll-bar");
+scrollBar.length !== 0 && scrollBar.mCustomScrollbar({
 	scrollButtons:{
 		enable:false
 	},
