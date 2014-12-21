@@ -28,9 +28,13 @@
       <link rel="stylesheet" href="assets/css/ie8.css" />
     <![endif]-->
 
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-animate.js"></script>
+	<script src="assets/js/script.js"></script>
+	
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   </head>
-  <body>
+  <body ng-app="ctug">
     <!--[IE 9]>
       <p class="chromeframe">
         Stai usando un browser <strong>non supportato</strong>.
@@ -90,39 +94,12 @@
             </li>
           </ul>
         </div>
-        <section id="section-2-module" class="module-row animation js-simple-animation darkred clearfix">
-          <h1 class="module-main-title content-align-center">SECTION 1</h1>
-          <div class="content clearfix">
-            <article class="block-item-post same-height justify clearfix box-width width_1_4">
-              <h1 class="block-title content-align-center"><a href="">Titolo box</a></h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non aliquam lectus. Morbi hendrerit magna at quam facilisis, ac accumsan magna fringilla. Curabitur at felis auctor, vulputate dui at, pharetra ante. Vivamus faucibus elit enim, facilisis blandit massa fermentum eget. Mauris tortor justo, volutpat non nibh eget,
-              </p>
-              <a class="link-btn auto-margin more-info white" href="">More</a>
-            </article>
-            <article class="block-item-post same-height box-width clearfix width_1_4">
-              <h1 class="block-title content-align-center"><a href="">Titolo box</a></h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non aliquam lectus. Morbi hendrerit magna at quam facilisis, ac accumsan magna fringilla. Curabitur at felis auctor, vulputate dui at, pharetra ante. Vivamus faucibus elit enim, facilisis blandit massa fermentum eget. Mauris tortor justo, volutpat non nibh eget,
-              </p>
-              <a class="link-btn auto-margin more-info white" href="">More</a>
-            </article>
-            <article class="block-item-post same-height box-width clearfix width_1_4">
-              <h1 class="block-title content-align-center"><a href="">Titolo box</a></h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non aliquam lectus. Morbi hendrerit magna at quam facilisis, ac accumsan magna fringilla. Curabitur at felis auctor, vulputate dui at, pharetra ante. Vivamus faucibus elit enim, facilisis blandit massa fermentum eget. Mauris tortor justo, volutpat non nibh eget,
-              </p>
-              <a class="link-btn auto-margin more-info white" href="">More</a>
-            </article>
-            <article class="block-item-post same-height box-width clearfix last width_1_4">
-              <h1 class="block-title content-align-center"><a href="">Titolo box</a></h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non aliquam lectus. Morbi hendrerit magna at quam facilisis, ac accumsan magna fringilla. Curabitur at felis auctor, vulputate dui at, pharetra ante. Vivamus faucibus elit enim, facilisis blandit massa fermentum eget. Mauris tortor justo, volutpat non nibh eget,
-              </p>
-              <a class="link-btn auto-margin more-info white" href="">More</a>
-            </article>
-          </div>
+        <section ng-controller="section2Controller" id="section-2-module" class="module-row animation js-simple-animation darkred clearfix">
+			
+			<div ng-include="'section2.html'"></div>
+          
         </section>
+		
         <section id="section-3-module"  class="module-row partner animation js-simple-animation clearfix">
           <h1 class="module-main-title content-align-center">Section 2</h1>
           <div class="content clearfix">
@@ -264,11 +241,13 @@
       </div>
     </footer>
 
+	
     <script src="assets/js/respond.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.inview.js"></script>
     <script src="assets/js/main.js"></script>
 
+	
     <script type="text/javascript">
       $(document).ready(function() {
         $('.js-menu').on('click', function(e) {
