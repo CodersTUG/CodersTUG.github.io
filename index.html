@@ -71,16 +71,11 @@
       </header>
       <div id="main">
         <article id="section-1-module" class="module-main-banner animation js-simple-animation b1">
-          <div class="module-row">
-            <div class="content">
-              <div class="box-width block-text justify width_2_4 auto-margin clearfix">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non aliquam lectus. Morbi hendrerit magna at quam facilisis, ac accumsan magna fringilla. Curabitur at felis auctor, vulputate dui at, pharetra ante. Vivamus faucibus elit enim, facilisis blandit massa fermentum eget. Mauris tortor justo, volutpat non nibh eget, scelerisque aliquam dolor. Fusce eget purus ac tortor consectetur commodo. Suspendisse dui nisl, aliquet id euismod non, porttitor sed eros. In ornare mauris turpis, id scelerisque diam aliquet eleifend. Nunc ac nibh vehicula, lacinia quam a, mattis nulla. Phasellus pretium risus id arcu mattis blandit.
-                </p>
-              </div>
-            </div>
-          </div>
+			
+			<div ng-include="'section1.html'"></div>
+          
         </article>
+		
         <div class="module-slideshow lexslider js-slider-item-auto">
           <ul class="slides">
             <li>
@@ -94,6 +89,7 @@
             </li>
           </ul>
         </div>
+		
         <section ng-controller="section2Controller" id="section-2-module" class="module-row animation js-simple-animation darkred clearfix">
 			
 			<div ng-include="'section2.html'"></div>
@@ -101,130 +97,24 @@
         </section>
 		
         <section id="section-3-module"  class="module-row partner animation js-simple-animation clearfix">
-          <h1 class="module-main-title content-align-center">Section 2</h1>
-          <div class="content clearfix">
-            <article class="block-item-post same-height justify clearfix box-width width_1_4">
-                <h1 class="block-title content-align-center"><a href="">Titolo box</a></h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non aliquam lectus. Morbi hendrerit magna at quam facilisis, ac accumsan magna fringilla. Curabitur at felis auctor, vulputate dui at, pharetra ante. Vivamus faucibus elit enim, facilisis blandit massa fermentum eget. Mauris tortor justo, volutpat non nibh eget,
-                </p>
-                <a class="link-btn auto-margin more-info black" href="">More</a>
-            </article>
-            <article class="block-item-post same-height box-width clearfix width_1_4">
-              <h1 class="block-title content-align-center"><a href="">Titolo box</a></h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non aliquam lectus. Morbi hendrerit magna at quam facilisis, ac accumsan magna fringilla. Curabitur at felis auctor, vulputate dui at, pharetra ante. Vivamus faucibus elit enim, facilisis blandit massa fermentum eget. Mauris tortor justo, volutpat non nibh eget,
-              </p>
-              <a class="link-btn auto-margin more-info black" href="">More</a>
-            </article>
-            <article class="block-item-post same-height box-width clearfix width_1_4">
-              <h1 class="block-title content-align-center"><a href="">Titolo box</a></h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non aliquam lectus. Morbi hendrerit magna at quam facilisis, ac accumsan magna fringilla. Curabitur at felis auctor, vulputate dui at, pharetra ante. Vivamus faucibus elit enim, facilisis blandit massa fermentum eget. Mauris tortor justo, volutpat non nibh eget,
-              </p>
-              <a class="link-btn auto-margin more-info black" href="">More</a>
-            </article>
-            <article class="block-item-post same-height box-width clearfix last width_1_4">
-              <h1 class="block-title content-align-center"><a href="">Titolo box</a></h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non aliquam lectus. Morbi hendrerit magna at quam facilisis, ac accumsan magna fringilla. Curabitur at felis auctor, vulputate dui at, pharetra ante. Vivamus faucibus elit enim, facilisis blandit massa fermentum eget. Mauris tortor justo, volutpat non nibh eget,
-              </p>
-              <a class="link-btn auto-margin more-info black" href="">More</a>
-            </article>
-          </div>
-        </section>
+          
+		  <div ng-include="'section3.html'"></div>
+		 
+		</section>
+		
         <section id="section-4-module" class="module-row animation js-simple-animation green clearfix">
-          <h1 class="module-main-title content-align-center">Section 3</h1>
-          <div class="content clearfix">
-            <article class="block-item-post clearfix box-width width_2_4" >
-              <figure class="figure">
-                <a href=""><img src="assets/images/various/thumb-about.jpg" alt="" ></a>
-              </figure>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non aliquam lectus. Morbi hendrerit magna at quam facilisis, ac accumsan magna fringilla. Curabitur at felis auctor, vulputate dui at, pharetra ante. Vivamus faucibus elit enim, facilisis blandit massa fermentum eget.
-              </p>
-              <a class="link-btn auto-margin more-info white" href="">More</a>
-            </article>
-            <section class="module-archive-item-post clearfix box-width width_2_4">
-              <h1 class="hidden">Ultime news</h1>
-              <article class="block-item-post news clearfix">
-                <figure class="figure pull-left">
-                  <a href=""><img src="assets/images/various/thumb-news.jpg" alt="" ></a>
-                </figure>
-                <span class="block-info">10.10.14 <i>Workshop</i></span>
-                <h1 class="block-title"><a href="">Titolo dell'evento</a></h1>
-              </article>
-              <article class="block-item-post news clearfix">
-                <figure class="figure pull-left">
-                  <a href=""><img src="assets/images/various/thumb-news.jpg" alt="" ></a>
-                </figure>
-                <span class="block-info">10.10.14 <i>News</i></span>
-                <h1 class="block-title"><a href="">Titolo della news</a></h1>
-              </article>
-              <article class="block-item-post news clearfix">
-                <figure class="figure pull-left">
-                  <a href=""><img src="assets/images/various/thumb-news.jpg" alt="" ></a>
-                </figure>
-                <span class="block-info">10.10.14 <i>Press</i></span>
-                <h1 class="block-title"><a href="">Titolo della news</a></h1>
-              </article>
-              <a class="link-btn auto-margin archive white" href="">Archive</a>
-            </section>
-          </div>
-        </section>
-        <div class="module-banner-video">
+			<div ng-include="'section4.html'"></div>
+		</section>
+        
+		<div class="module-banner-video">
           <iframe width="560" height="315" src="http://www.youtube.com/embed/ccIt-qRQBoI" allowfullscreen></iframe>
         </div>
+		
         <section id="section-5-module" class="module-row animation js-simple-animation gray clearfix">
-          <h1 class="module-main-title content-align-center">Contacts</h1>
-          <div class="content clearfix">
-            <div class="block-form box-width auto-margin width_2_4">
-              <div class="form-box">
-              <h2 id="title-form" class="block-title hidden">Richiedi informazioni</h2>
-              <form method="post" action="#" name="formMaMa" id="formMaMa">
-                <table>
-                  <tr>
-                    <td>
-                      <p><input placeholder="Nome" type="text" name="formNome" value="" /><input type="text" class="hidden" name="formCheck" value="" /></p>
-                    </td>
-                    <td>
-                      <p><input type="text" class="no-margin-right" placeholder="Cognome"  name="formCognome" value="" /></p></td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p><input type="text"  placeholder="Email"  name="formEmail" value="" /></p>
-                    </td>
-                    <td>
-                      <p><input type="text" class="no-margin-right"  placeholder="Telefono"  name="formTelefono" value="" /></p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      <textarea name="formRichiesta"  placeholder="Messaggio..."  ></textarea>
-                    </td>
-                  </tr>
-                </table>
-                <table class="privacy">
-                  <tr>
-                    <td>
-                      <p>
-                        <input class="check" type="checkbox" name="formPrivacy" value="" />
-                        <small>
-                          Ai sensi dell'art. 13 del D.Lgs. 196/03, la compilazione del modulo costituisce esplicita autorizzazione e
-                          consenso alla detenzione e al trattamento dei dati personali, come disposto dal Codice in materia di dati personali.
-                          La informiamo inoltre che, relativamente ai dati forniti, potrà esercitare i diritti previsti dall'art. 7 del D.Lgs. 196/03.
-                        </small>
-                      </p>
-                      <input type="submit" class="button send auto-margin" name="go" value="Invia" />
-                      <input type="hidden"  name="siteName" value="" />
-                    </td>
-                  </tr>
-                </table>
-              </form>
-              </div>
-            </div>
-          </div>
-        </section>
+          
+		  <div ng-include="'section5.html'"></div>
+		  
+		</section>
       </div>
     </div>
     <footer id="footer">
