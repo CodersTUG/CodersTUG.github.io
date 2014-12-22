@@ -11,27 +11,28 @@
     <link rel="stylesheet" href="assets/css/font.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
     <!-- FLEXSLIDER -->
-    <link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" />
-    <script defer src="assets/js/jquery.flexslider.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/flexslider-min.css" type="text/css" media="screen" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/jquery.flexslider-min.js"></script>
     <!-- FLEXSLIDER -->
 
     <!--[if lt IE 9]>
-      <script src="assets/js/nwmatcher-1.2.5-min.js"></script>
-      <script type="text/javascript" src="assets/js/selectivizr.js"></script>
-      <link rel="stylesheet" href="assets/css/styles.css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/nwmatcher/1.2.5/nwmatcher.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
     <![endif]-->
 
     <!--[if lte IE 8]>
       <link rel="stylesheet" href="assets/css/ie8.css" />
     <![endif]-->
 
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-animate.js"></script>
-	<script src="assets/js/script.js"></script>
-	
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-animate.js"></script>
+    <script src="assets/js/ngstartup.js"></script>
+
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   </head>
   <body ng-app="ctug">
@@ -71,50 +72,38 @@
       </header>
       <div id="main">
         <article id="section-1-module" class="module-main-banner animation js-simple-animation b1">
-			
-			<div ng-include="'section1.html'"></div>
-          
+          <div ng-include="'section1.html'"></div>
         </article>
-		
+
         <div class="module-slideshow lexslider js-slider-item-auto">
           <ul class="slides">
+            <li>
+              <div class="module-sub-banner" style="background:url(assets/images/slideshow/01.jpg);"></div>
+            </li>
             <li>
               <div class="module-sub-banner" style="background:url(assets/images/slideshow/02.jpg);"></div>
             </li>
             <li>
               <div class="module-sub-banner" style="background:url(assets/images/slideshow/03.jpg);"></div>
             </li>
-            <li>
-              <div class="module-sub-banner" style="background:url(assets/images/slideshow/01.jpg);"></div>
-            </li>
           </ul>
         </div>
-		
+
         <section ng-controller="section2Controller" id="section-2-module" class="module-row animation js-simple-animation darkred clearfix">
-			
-			<div ng-include="'section2.html'"></div>
-          
+          <div ng-include="'section2.html'"></div>
         </section>
-		
-        <section id="section-3-module"  class="module-row partner animation js-simple-animation clearfix">
-          
-		  <div ng-include="'section3.html'"></div>
-		 
-		</section>
-		
+
+        <section id="section-3-module" class="module-row partner animation js-simple-animation clearfix">
+          <div ng-include="'section3.html'"></div>
+        </section>
+
         <section id="section-4-module" class="module-row animation js-simple-animation green clearfix">
-			<div ng-include="'section4.html'"></div>
-		</section>
-        
-		<div class="module-banner-video">
-          <iframe width="560" height="315" src="http://www.youtube.com/embed/ccIt-qRQBoI" allowfullscreen></iframe>
-        </div>
-		
+          <div ng-include="'section4.html'"></div>
+        </section>
+
         <section id="section-5-module" class="module-row animation js-simple-animation gray clearfix">
-          
-		  <div ng-include="'section5.html'"></div>
-		  
-		</section>
+          <div ng-include="'section5.html'"></div>
+        </section>
       </div>
     </div>
     <footer id="footer">
@@ -122,35 +111,16 @@
         <div class="block-social-network">
           <ul>
             <li><a href="" target="_blank" class="twitter">Twitter</a></li>
-            <li><a href="" target="_blank" class="linkedin">Linkedin</a></li>
           </ul>
         </div>
         <p>
-          &copy; 2014 All rights reserved Coders <a href="mailto:email@email.it">email@email.it</a>
+          &copy; 2014 All rights reserved Coders TUG
         </p>
       </div>
     </footer>
 
-	
-    <script src="assets/js/respond.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.inview.js"></script>
     <script src="assets/js/main.js"></script>
-
-	
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('.js-menu').on('click', function(e) {
-          $('.nav-collapse').addClass("close-menu");
-          $('.nav-collapse').removeClass("in");
-          e.preventDefault();
-        });
-
-        $('.show-nav-for-iphone').on('click', function(e) {
-          $('.nav-collapse').removeClass("close-menu");
-          e.preventDefault();
-        });
-      });
-    </script>
   </body>
 </html>
