@@ -3,7 +3,7 @@
 
   angular
     .module('ctug', ['ngAnimate'])
-    .controller('section2Controller', ['$scope', function($scope) {
+    .controller('sliderController', ['$scope', function($scope) {
       $scope.hello = "hello";
     }]);
 

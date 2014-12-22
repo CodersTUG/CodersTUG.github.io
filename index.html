@@ -2,124 +2,134 @@
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
 <!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <title>Coders</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/font.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-    <!-- FLEXSLIDER -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/css/bootstrap-social.min.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/flexslider-min.css" type="text/css" media="screen" />
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/jquery.flexslider-min.js"></script>
-    <!-- FLEXSLIDER -->
+    <link rel="stylesheet" href="assets/css/font.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="assets/css/ie8.css" type="text/css" />
+    <![endif]-->
 
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-animate.js"></script>
+    <script src="assets/js/ngstartup.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>    
       <script src="https://cdnjs.cloudflare.com/ajax/libs/nwmatcher/1.2.5/nwmatcher.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
     <![endif]-->
-
-    <!--[if lte IE 8]>
-      <link rel="stylesheet" href="assets/css/ie8.css" />
-    <![endif]-->
-
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-animate.js"></script>
-    <script src="assets/js/ngstartup.js"></script>
-
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   </head>
   <body ng-app="ctug">
     <!--[IE 9]>
       <p class="chromeframe">
-        Stai usando un browser <strong>non supportato</strong>.
-        Per favore <a href="http://browsehappy.com/">aggiorna il tuo browser</a> o
-        <a href="http://www.google.com/chromeframe/?redirect=true">attiva Google Chrome Frame</a>
-        per far diventare pi&ugrave; potente il tuo browser.
+        Your browser is <strong>not supported</strong>
+        Please <a href="http://browsehappy.com/">upgrade it</a> or <a href="http://www.google.com/chromeframe/?redirect=true">enable Google Chrome Frame</a>
       </p>
     <![endif]-->
 
     <div id="outer" class="home">
       <header id="header" class="clearfix">
         <div class="content clearfix">
-          <button type="button" class="show-nav-for-iphone" data-toggle="collapse" data-target="#nav">menu</button>
-          <a href="home.html" id="site-link"><h1>Coders</h1></a>
+          <a href="home.html" id="site-link"><h1>Coders TUG</h1></a>
+          <div id="block-social-buttons">
+            <a class="btn btn-social-icon btn-soundcloud">
+              <i class="fa eventbrite"><span>Eventbrite<span></i>
+            </a>
+            <a class="btn btn-social-icon btn-twitter">
+              <i class="fa fa-twitter"><span>Twitter<span></i>
+            </a>
+            <a class="btn btn-social-icon btn-facebook">
+              <i class="fa fa-facebook"><span>Facebook<span></i>
+            </a>
+            <a class="btn btn-social-icon btn-instagram">
+              <i class="fa fa-instagram"><span>YouTube<span></i>
+            </a>
+            <a class="btn btn-social-icon btn-google-plus">
+              <i class="fa fa-youtube"><span>YouTube<span></i>
+            </a>
+            <a class="btn btn-social-icon btn-vimeo">
+              <i class="fa fa-vimeo-square"><span>Vimeo<span></i>
+            </a>
+            <a class="btn btn-social-icon btn-github">
+              <i class="fa fa-github"><span>GitHub<span></i>
+            </a>
+          </div>
           <div id="block-choose-languages">
             <ul>
-              <li class="active"><a href="">IT</a></li>
-              <li><a href="">EN</a></li>
+              <li class="active"><a>IT</a></li>
+              <li><a>EN</a></li>
             </ul>
           </div>
+          <button type="button" class="menu-toggle" data-toggle="collapse" data-target="#nav">menu</button>
           <div id="nav" class="nav-collapse collapse">
             <nav id="menu">
               <h1 class="hidden">Navigazione principale</h1>
                 <ul>
-                  <li><a id="section-1" class="js-menu active" >Home</a></li>
-                  <li><a id="section-2" class="js-menu">Section 1</a></li>
-                  <li><a id="section-3" class="js-menu">Section 2</a></li>
-                  <li><a id="section-4" class="js-menu">Section 3</a></li>
-                  <li><a id="section-5" class="js-menu">Contacts</a></li>
+                  <li><a href="#aboutUs" class="js-menu active">About us</a></li>
+                  <li><a href="#featured" class="js-menu">Featured</a></li>
+                  <li><a href="#events" class="js-menu">Past events</a></li>
+                  <li><a href="#aperiCoders" class="js-menu">Past AperiCoders</a></li>
+                  <li><a href="#coderJams" class="js-menu">Past CoderJams</a></li>
+                  <li><a href="#news" class="js-menu">News</a></li>
                 </ul>
             </nav>
           </div>
         </div>
       </header>
       <div id="main">
-        <article id="section-1-module" class="module-main-banner animation js-simple-animation b1">
-          <div ng-include="'section1.html'"></div>
+        <article id="aboutUs" class="module-main-banner animation js-simple-animation b1">
+          <div ng-include="'section-about.html'"></div>
         </article>
 
-        <div class="module-slideshow lexslider js-slider-item-auto">
-          <ul class="slides">
-            <li>
-              <div class="module-sub-banner" style="background:url(assets/images/slideshow/01.jpg);"></div>
-            </li>
-            <li>
-              <div class="module-sub-banner" style="background:url(assets/images/slideshow/02.jpg);"></div>
-            </li>
-            <li>
-              <div class="module-sub-banner" style="background:url(assets/images/slideshow/03.jpg);"></div>
-            </li>
-          </ul>
-        </div>
-
-        <section ng-controller="section2Controller" id="section-2-module" class="module-row animation js-simple-animation darkred clearfix">
-          <div ng-include="'section2.html'"></div>
+        <section id="featured" class="module-row animation js-simple-animation darkred clearfix">
+          <div ng-include="'section-featured.html'"></div>
         </section>
 
-        <section id="section-3-module" class="module-row partner animation js-simple-animation clearfix">
-          <div ng-include="'section3.html'"></div>
+        <section id="events" class="module-row animation js-simple-animation green clearfix" ng-controller="sliderController">
+          <div ng-include="'section-events.html'"></div>
         </section>
 
-        <section id="section-4-module" class="module-row animation js-simple-animation green clearfix">
-          <div ng-include="'section4.html'"></div>
+        <section id="aperiCoders" class="module-row animation js-simple-animation fucsia clearfix">
+          <div ng-include="'section-apericoders.html'"></div>
         </section>
 
-        <section id="section-5-module" class="module-row animation js-simple-animation gray clearfix">
-          <div ng-include="'section5.html'"></div>
+        <section id="coderJams" class="module-row animation js-simple-animation clearfix">
+          <div ng-include="'section-coderjams.html'"></div>
+        </section>
+
+        <section id="news" class="module-row animation js-simple-animation green clearfix">
+          <div ng-include="'section-news.html'"></div>
         </section>
       </div>
     </div>
     <footer id="footer">
-      <div class="content content-align-center">
+      <div class="content text-center">
         <div class="block-social-network">
           <ul>
-            <li><a href="" target="_blank" class="twitter">Twitter</a></li>
+            <li>
+              <a href="http://twitter.com/coderstug"><span class="fa fa-twitter"></span></a>
+            </li>
           </ul>
         </div>
         <p>
-          &copy; 2014 All rights reserved Coders TUG
+          &copy; 2015 All rights reserved Coders TUG
         </p>
       </div>
     </footer>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/jquery.flexslider-min.js"></script>
     <script src="assets/js/jquery.inview.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
