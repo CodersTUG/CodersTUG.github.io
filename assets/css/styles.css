@@ -46,8 +46,8 @@ a:hover {
 	text-decoration:none;
 }
 
-.figure {
-	background:#fff url(../images/ico-zoom.png) center no-repeat;
+.figure img {
+  width: 100%;
 }
 
 .figure img:hover {
@@ -457,8 +457,12 @@ h1,h2,h3,h4 {
 	line-height:1.6em;
 }
 
+.block-item-post {
+  padding-bottom:40px;
+}
+
 .block-item-post p {
-	padding-bottom:18px;
+  height: 200px;
 }
 
 .block-item-post img {
@@ -478,7 +482,7 @@ h1,h2,h3,h4 {
 	padding:0!important;
 	margin:0!important;
 	margin-bottom:0!important;
-	font-size:25px;
+	font-size:22px;
 	text-transform:none!important;
 }
 
