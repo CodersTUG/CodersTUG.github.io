@@ -78,11 +78,9 @@
               <h1 class="hidden">Navigazione principale</h1>
                 <ul>
                   <li><a href="#aboutUs" class="js-menu active">About us</a></li>
-                  <li><a href="#featured" class="js-menu">Featured</a></li>
-                  <li><a href="#events" class="js-menu">Past events</a></li>
-                  <li><a href="#aperiCoders" class="js-menu">Past AperiCoders</a></li>
-                  <li><a href="#coderJams" class="js-menu">Past CoderJams</a></li>
                   <li><a href="#news" class="js-menu">News</a></li>
+                  <li><a href="#eventTypes" class="js-menu">AperiCoders and CoderJams</a></li>
+                  <li><a href="#pastEvents" class="js-menu">Past events</a></li>
                 </ul>
             </nav>
           </div>
@@ -92,19 +90,15 @@
         <section id="aboutUs" class="module-main-banner animation js-simple-animation" ng-include="'section-about.html'">
         </section>
 
-        <section id="featured" class="module-row animation js-simple-animation clearfix" ng-include="'section-featured.html'">
-        </section>
-
-        <section id="events" class="module-row animation js-simple-animation darkred clearfix" ng-controller="sliderController" ng-include="'section-events.html'">
-        </section>
-
-        <section id="aperiCoders" class="module-row animation js-simple-animation green clearfix" ng-include="'section-apericoders.html'">
-        </section>
-
-        <section id="coderJams" class="module-row animation js-simple-animation fucsia clearfix" ng-include="'section-coderjams.html'">
+        <section id="eventTypes" class="module-row animation js-simple-animation clearfix">
+          <div class="green col-sm-offset-1 col-sm-4 col-xs-6" ng-include="'section-apericoders.html'"></div>
+          <div class="fucsia col-sm-offset-2 col-sm-4 col-xs-6" ng-include="'section-coderjams.html'"></div>
         </section>
 
         <section id="news" class="module-row animation js-simple-animation green clearfix" ng-include="'section-news.html'">
+        </section>
+
+        <section id="pastEvents" class="module-row animation js-simple-animation darkred clearfix" ng-controller="sliderController" ng-include="'section-past_events.html'">
         </section>
       </div>
     </div>

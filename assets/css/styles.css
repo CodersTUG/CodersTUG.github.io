@@ -461,12 +461,8 @@ h1,h2,h3,h4 {
   padding-bottom:40px;
 }
 
-.block-item-post p {
+#pastEvents .block-item-post p {
   height: 200px;
-}
-
-.block-item-post img {
-	border:1px solid #ccc;
 }
 
 .block-item-post .block-info {
@@ -479,11 +475,10 @@ h1,h2,h3,h4 {
 
 .block-item-post .block-title {
 	text-align:left;
-	padding:0!important;
-	margin:0!important;
-	margin-bottom:0!important;
+	padding:0;
+	margin:0;
 	font-size:22px;
-	text-transform:none!important;
+	text-transform:none;
 }
 
 .block-item-post .block-title a {
@@ -525,6 +520,10 @@ h1,h2,h3,h4 {
 	color:#333;
 	text-transform:uppercase;
 	margin-bottom:25px;
+}
+
+#eventTypes .module-main-title {
+	margin-bottom:-5px;
 }
 
 .module-sub-title {
@@ -584,9 +583,7 @@ h1,h2,h3,h4 {
 	background:#fff;
 }
 
-.module-row.green,
-.module-row.fucsia,
-.module-row.gray {
+.module-row.green {
 	background:#9cb124;
 }
 
