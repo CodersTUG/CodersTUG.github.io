@@ -254,7 +254,7 @@ h1,h2,h3,h4 {
 }
 
 #header #site-link {
-	background:url(../images/logo.png) no-repeat;
+	background:url(../images/header/logo.png) no-repeat;
 	width:350px;
 	height:50px;
 	display:block;
@@ -291,7 +291,7 @@ h1,h2,h3,h4 {
 
 #header #block-social-buttons .eventbrite,
 #header #block-social-buttons .evtsiteico:hover {
-  background: url('../images/eventbrite-white.png');
+  background: url('../images/header/eventbrite-white.png');
   background-repeat: no-repeat;
   top: 7px;
   left: 7px;
@@ -465,10 +465,6 @@ h1,h2,h3,h4 {
 	border:1px solid #ccc;
 }
 
-.block-item-post.same-height {
-	margin-bottom:20px;
-}
-
 .block-item-post .block-info {
 	font-size:14px;
 }
@@ -540,7 +536,7 @@ h1,h2,h3,h4 {
 .module-main-banner {
 	height:350px;
 	position:relative;
-	background:url(../images/banner.jpg) no-repeat;
+	background:url(../images/section-about/banner.jpg) no-repeat;
   background-position: 0 50%;
 	background-size:cover;
 }
