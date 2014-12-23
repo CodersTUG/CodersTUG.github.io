@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="assets/css/bootstrap-social.min.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/flexslider-min.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Audiowide" type="text/css" />
+
     <link rel="stylesheet" href="assets/css/font.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
     <!--[if lte IE 8]>
@@ -87,28 +89,22 @@
         </div>
       </header>
       <div id="main">
-        <article id="aboutUs" class="module-main-banner animation js-simple-animation b1">
-          <div ng-include="'section-about.html'"></div>
-        </article>
-
-        <section id="featured" class="module-row animation js-simple-animation darkred clearfix">
-          <div ng-include="'section-featured.html'"></div>
+        <section id="aboutUs" class="module-main-banner animation js-simple-animation" ng-include="'section-about.html'">
         </section>
 
-        <section id="events" class="module-row animation js-simple-animation green clearfix" ng-controller="sliderController">
-          <div ng-include="'section-events.html'"></div>
+        <section id="featured" class="module-row animation js-simple-animation clearfix" ng-include="'section-featured.html'">
         </section>
 
-        <section id="aperiCoders" class="module-row animation js-simple-animation fucsia clearfix">
-          <div ng-include="'section-apericoders.html'"></div>
+        <section id="events" class="module-row animation js-simple-animation darkred clearfix" ng-controller="sliderController" ng-include="'section-events.html'">
         </section>
 
-        <section id="coderJams" class="module-row animation js-simple-animation clearfix">
-          <div ng-include="'section-coderjams.html'"></div>
+        <section id="aperiCoders" class="module-row animation js-simple-animation green clearfix" ng-include="'section-apericoders.html'">
         </section>
 
-        <section id="news" class="module-row animation js-simple-animation green clearfix">
-          <div ng-include="'section-news.html'"></div>
+        <section id="coderJams" class="module-row animation js-simple-animation fucsia clearfix" ng-include="'section-coderjams.html'">
+        </section>
+
+        <section id="news" class="module-row animation js-simple-animation green clearfix" ng-include="'section-news.html'">
         </section>
       </div>
     </div>
