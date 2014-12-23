@@ -68,12 +68,12 @@ $(window).load(function(){
   });
 
   // animation simple hide/show
-  $('.js-simple-animation').bind('inview', function (event, visible) {
+  $('.js-simple-animation').on('inview', function (event, visible) {
     visible == true && $(this).addClass('on');
   });
 
   // animation atomic hide/show
-  $('.js-atomic-animation').bind('inview', function(e, isInView, visiblePartX, visiblePartY) {
+  $('.js-atomic-animation').on('inview', function(e, isInView, visiblePartX, visiblePartY) {
     var elem = $(this);
     if (elem.data('inviewtimer')) {
       clearTimeout(elem.data('inviewtimer'));
