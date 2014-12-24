@@ -169,7 +169,7 @@ a:visited {
 
 #header #block-choose-languages ul li a {
 	display: inline-block;
-	font-family: TitilliumRegular,sans-serif;
+	font-family: 'Titillium Web',sans-serif;
 	text-transform: uppercase;
 	color: #a9a9a9;
 	font-size: 16px;
@@ -216,7 +216,7 @@ a:visited {
 
 #header #menu ul li a {
 	display: inline-block;
-	font-family: TitilliumRegular,sans-serif;
+	font-family: 'Titillium Web',sans-serif;
 	text-transform: uppercase;
 	color: #fff;
 	font-size: 20px;
@@ -285,7 +285,7 @@ a:visited {
 
 .section-title {
 	text-align: center;
-	font-family: TitilliumRegular,sans-serif;
+	font-family: 'Titillium Web',sans-serif;
 	font-size: 35px;
 	color: #fff;
 	text-transform: uppercase;
@@ -317,7 +317,7 @@ a:visited {
 
 .section-subtitle {
 	text-align: center;
-	font-family: TitilliumRegular,sans-serif;
+	font-family: 'Titillium Web',sans-serif;
 	font-size: 25px;
 	color: #fff;
 	text-transform: none;
@@ -327,7 +327,7 @@ a:visited {
 
 .block-title {
 	text-align: center;
-	font-family: TitilliumRegular,sans-serif;
+	font-family: 'Titillium Web',sans-serif;
 	font-size: 20px;
 	color: #fff;
 	text-transform: uppercase;
@@ -338,12 +338,12 @@ a:visited {
   padding: 13px 0 25px 0;
 	margin: 0;
 	line-height: 1.4em;
-  font-family: TitilliumRegular,sans-serif;
+  font-family: 'Titillium Web',sans-serif;
 }
 
 .banner-section .block-text {
 	padding: 5px 20px;
-  font-family: TitilliumRegular,sans-serif;
+  font-family: 'Titillium Web',sans-serif;
   font-size: 16px;
   color: #fff;
   width: 500px;
@@ -395,7 +395,7 @@ a:visited {
 	display: inline-block;
 	padding: 4px 12px 0;
 	line-height: 25px;
-	font-family: TitilliumRegular,sans-serif;
+	font-family: 'Titillium Web',sans-serif;
 	text-transform: uppercase;
 	font-size: 20px;
 	-moz-transition: all .4s ease-in-out;
