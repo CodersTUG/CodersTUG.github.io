@@ -71,9 +71,55 @@ a:visited {
 	width: 100%;
 }
 
+/*
 #header #menuToggle {
 	display: none;
 }
+*/
+
+#header #menu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 40px 0 0;
+}
+
+#header #menu ul {
+	padding: 0;
+	margin: 0;
+}
+
+#header #menu ul li {
+	display: inline;
+}
+
+#header #menu ul li a {
+	display: inline-block;
+	font-family: 'Titillium Web',sans-serif;
+	text-transform: uppercase;
+	color: #9cb124;
+	font-size: 18px;
+	padding: 4px 12px 0;
+	line-height: 25px;
+	border: 1px solid #9cb124;
+	cursor: pointer;
+	float: left;
+	-moz-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+	backface-visibility: hidden;
+	webkit-backface-visibility: hidden;
+}
+
+#header #menu ul li.active a,
+#header #menu  ul li a:active,
+#header #menu ul li a:hover {
+  color: #595959;
+	text-decoration: none;
+}
+
+
 
 #header #ctug-logo {
 	background: url(../images/header/logo.png) no-repeat;
@@ -190,51 +236,12 @@ a:visited {
 #header #block-choose-languages ul li a:active {
 	border: 1px solid #9cb124;
   color: #9cb124;
+  text-decoration: none;
 }
 
 #header #block-choose-languages ul li a:hover {
 	border: 1px solid #595959;
   color: #595959;
-	text-decoration: none;
-}
-
-#header #menu {
-	position: absolute;
-	top: 0;
-	right: 0;
-	margin: 40px 0 0;
-}
-
-#header #menu ul {
-	padding: 0;
-	margin: 0;
-}
-
-#header #menu ul li {
-	display: inline;
-}
-
-#header #menu ul li a {
-	display: inline-block;
-	font-family: 'Titillium Web',sans-serif;
-	text-transform: uppercase;
-	color: #fff;
-	font-size: 20px;
-	padding: 4px 12px 0;
-	line-height: 25px;
-	border: 1px solid #9cb124;
-	cursor: pointer;
-	float: left;
-	-moz-transition: all .4s ease-in-out;
-	-webkit-transition: all .4s ease-in-out;
-	-o-transition: all .4s ease-in-out;
-	transition: all .4s ease-in-out;
-	backface-visibility: hidden;
-	webkit-backface-visibility: hidden;
-}
-
-#header #menu ul li a.active,#header #menu ul li a:hover {
-	border: 1px solid #fff;
 	text-decoration: none;
 }
 

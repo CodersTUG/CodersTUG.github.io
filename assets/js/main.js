@@ -1,17 +1,16 @@
 $(window).load(function(){
-  //#pastEvents .block-item-post p
+  $('#menuToggle').on('click', function(e) {
+    e.preventDefault();
+  });
+
   $('.js-menu').on('click', function(e) {
     e.preventDefault();
-    $('html, body').animate({ scrollTop: $(this.href).offset().top - 80 }, 600);
+    var href = $(this).attr('href');
+    $('html, body').animate({ scrollTop: $(href).offset().top - 80 }, 600);
     $('.js-menu').removeClass('active');
     $(this).addClass('active');
-    $('#nav-collapse')
-      .addClass('close-menu')
-      .removeClass('in');
+    $('#nav-collapse').removeClass('in');
   });
-  
-  $('#menuToggle').on('click', function(e) {
-    $('#nav-collapse').removeClass('close-menu');
-    e.preventDefault();
-  });
+
+  //#pastEvents .block-item-post p
 });
