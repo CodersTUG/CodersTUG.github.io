@@ -6,10 +6,10 @@ $(window).load(function(){
   $('.js-menu').on('click', function(e) {
     e.preventDefault();
     var href = $(this).attr('href');
-    $('html, body').animate({ scrollTop: $(href).offset().top - 80 }, 600);
+    $('html, body').animate({ scrollTop: $(href).offset().top - 115 }, 600);
     $('.js-menu').removeClass('active');
     $(this).addClass('active');
-    $('#nav-collapse').removeClass('in');
+    $('#navigationMenu').removeClass('in');
   });
 
   //#pastEvents .block-item-post p

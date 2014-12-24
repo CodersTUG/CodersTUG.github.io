@@ -1,7 +1,7 @@
 body {
 	background-color: #fff;
 	font-family: 'Open Sans',sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	color: #333;
 	overflow-x: hidden;
 }
@@ -62,90 +62,42 @@ a:visited {
   color: #e6e7ab;
 }
 
+
+
 #header {
   z-index: 1;
 	position: fixed;
-	height: 100px;
+	height: 115px;
   background: #f9f9f9;
 	border-bottom: 1px solid #a9a9a9;
 	width: 100%;
 }
 
-/*
-#header #menuToggle {
-	display: none;
-}
-*/
-
-#header #menu {
-	position: absolute;
-	top: 0;
-	right: 0;
-	margin: 40px 0 0;
-}
-
-#header #menu ul {
-	padding: 0;
-	margin: 0;
-}
-
-#header #menu ul li {
-	display: inline;
-}
-
-#header #menu ul li a {
-	display: inline-block;
-	font-family: 'Titillium Web',sans-serif;
-	text-transform: uppercase;
-	color: #9cb124;
-	font-size: 18px;
-	padding: 4px 12px 0;
-	line-height: 25px;
-	border: 1px solid #9cb124;
-	cursor: pointer;
-	float: left;
-	-moz-transition: all .4s ease-in-out;
-	-webkit-transition: all .4s ease-in-out;
-	-o-transition: all .4s ease-in-out;
-	transition: all .4s ease-in-out;
-	backface-visibility: hidden;
-	webkit-backface-visibility: hidden;
-}
-
-#header #menu ul li.active a,
-#header #menu  ul li a:active,
-#header #menu ul li a:hover {
-  color: #595959;
-	text-decoration: none;
-}
-
-
-
-#header #ctug-logo {
-	background: url(../images/header/logo.png) no-repeat;
+#ctugLogo {
+	background: url(../images/header/logo-horizontal.png) no-repeat;
+  background-size: contain;
 	width: 350px;
-	height: 50px;
 	display: block;
 	float: left;
 	margin: 40px 0 -35px 15px;
 	text-indent: -9999px;
 }
 
-#header #block-social-buttons {
+#blockSocialButtons {
   float: left;
-	margin: 35px 15px 0 36px;
+	margin: 36px 15px 0 35px;
 }
 
-#header #block-social-buttons ul {
+#blockSocialButtons ul {
 	padding: 0;
 	margin: 0;
 }
 
-#header #block-social-buttons ul li {
+#blockSocialButtons ul li {
 	display: inline;
 }
 
-#header #block-social-buttons ul li a {
+#blockSocialButtons ul li a {
   padding: 1px 8px;
 	display: inline-block;
   font-size: 28px;
@@ -158,69 +110,48 @@ a:visited {
 	margin-right: 6px;
 }
 
-#header #block-social-buttons ul li a:hover {
+#blockSocialButtons ul li a:hover {
 	opacity: .5;
 	filter: alpha(opacity=.5);
 }
 
-#header #block-social-buttons .eventbrite-logo,
-#header #block-social-buttons .eventbrite-logo:hover  {
+#blockSocialButtons .eventbrite-logo,
+#blockSocialButtons .eventbrite-logo:hover  {
   background: url(../images/header/eventbrite-white.png);
   background-repeat: no-repeat;
   top: 7px;
   left: 7px;
 }
 
-@media (max-width: 700px) {
-  #header #ctug-logo {
-    margin: 9px 0 -35px 15px;
-  }
-  
-  #header #block-social-buttons {
-    white-space: nowrap;
-    margin: 55px 15px 0 36px;
-    position: absolute;
-    left: 0;
-  }
-}
-
-#header #block-social-buttons span {
+#blockSocialButtons span {
   position: absolute;
   text-indent: -9999px;
 }
 
-#header #block-choose-languages {
+#blockChooseLanguage {
 	position: absolute;
-	top: 0;
-	right: 0;
-	margin-top: 6px;
-	margin-right: 15px;
+	top: 6px;
+	right: 15px;
 }
 
-@media (max-width: 450px) {
-  #header #block-choose-languages {
-    display: none;
-  }
-}
-
-#header #block-choose-languages ul {
+#blockChooseLanguage ul {
 	padding: 0;
 	margin: 0;
 }
 
-#header #block-choose-languages ul li {
+#blockChooseLanguage ul li {
 	list-style: none;
 	display: inline;
 }
 
-#header #block-choose-languages ul li a {
+#blockChooseLanguage ul li a {
 	display: inline-block;
 	font-family: 'Titillium Web',sans-serif;
 	text-transform: uppercase;
 	color: #a9a9a9;
 	font-size: 16px;
-	padding: 3px 12px 0;
-	line-height: 20px;
+	padding: 3px 12px;
+	line-height: 21px;
 	border: 1px solid transparent;
 	cursor: pointer;
 	float: left;
@@ -232,22 +163,73 @@ a:visited {
 	webkit-backface-visibility: hidden;
 }
 
-#header #block-choose-languages ul li.active a,
-#header #block-choose-languages ul li a:active {
+#blockChooseLanguage ul li.active a,
+#blockChooseLanguage ul li a:active {
 	border: 1px solid #9cb124;
   color: #9cb124;
   text-decoration: none;
 }
 
-#header #block-choose-languages ul li a:hover {
+#blockChooseLanguage ul li a:hover {
 	border: 1px solid #595959;
   color: #595959;
 	text-decoration: none;
 }
 
+#menuToggle {
+	display: none;
+}
+
+#navigationMenu {
+	position: absolute;
+	top: 85px;
+  left: 0;
+}
+
+#navigationMenu h1 {
+  text-indent: -9999px;
+}
+
+#navigationMenu ul {
+	padding: 0;
+	margin: 0;
+}
+
+#navigationMenu ul li {
+	display: inline;
+}
+
+#navigationMenu ul li a {
+	display: inline-block;
+	font-family: 'Titillium Web',sans-serif;
+	text-transform: uppercase;
+	color: #9cb124;
+	font-size: 16px;
+	padding: 0 20px;
+	line-height: 25px;
+	border: 0;
+	cursor: pointer;
+	float: left;
+	-moz-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+	backface-visibility: hidden;
+	webkit-backface-visibility: hidden;
+}
+
+#navigationMenu ul li.active a,
+#navigationMenu ul li a:active,
+#navigationMenu ul li a:hover {
+  color: #595959;
+	text-decoration: none;
+}
+
+
+
 #main {
 	position: relative;
-  padding-top: 100px;
+  padding-top: 115px;
 }
 
 .banner-section {
@@ -301,7 +283,7 @@ a:visited {
 
 .banner-section .section-title {
   display: inline-block;
-  width: 450px;
+  max-width: 450px;
 	margin: 10px 0 0 5px;
   padding: 0;
   border: none;
@@ -319,7 +301,7 @@ a:visited {
 }
 
 #eventTypes .section-title {
-	margin-bottom: -5px;
+	margin-bottom: 0;
 }
 
 .section-subtitle {
@@ -353,7 +335,7 @@ a:visited {
   font-family: 'Titillium Web',sans-serif;
   font-size: 16px;
   color: #fff;
-  width: 500px;
+  max-width: 500px;
 }
 
 .banner-section .block-text p {
@@ -375,7 +357,7 @@ a:visited {
 }
 
 .block-item .block-info {
-	font-size: 14px;
+	font-size: 16px;
 }
 
 .block-item .figure.pull-left {
@@ -433,8 +415,109 @@ a:visited {
 	border: 1px solid transparent;
 }
 
+
+
 #footer {
 	min-height: 70px;
 	background: #fff;
 	padding-top: 25px;
+}
+
+
+
+
+
+@media (max-width: 700px) {
+  #ctugLogo {
+    margin: 20px 0 -35px 15px;
+  }
+  
+  #blockSocialButtons {
+    white-space: nowrap;
+    margin: 70px 15px 0 20px;
+    position: absolute;
+  }
+
+  #blockChooseLanguage {
+    top: 18px;
+    right: 14%;
+  }
+
+  #menuToggle {
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    font-family: 'Titillium Web',sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.3em;
+    padding: 5px 12px;
+    line-height: 21px;
+    background: #333;
+  }
+  
+  #menuToggle span {
+    position: absolute;
+    text-indent: -9999px;
+  }
+
+  #navigationMenu {
+    top: 49px;
+    left: auto;
+    right: 20px;  
+    background: #333;
+    border-radius: 4px;
+  }
+
+  #navigationMenu h1 {
+    display: none;
+  }
+
+  #navigationMenu ul li {
+    display: block;
+  }
+  
+  #navigationMenu ul li a {
+    color: #fff;
+    border: 1px solid #bcdecb;
+    border-top: 0;
+    padding: 5px 35px;
+    width: 100%;
+  }
+
+  #navigationMenu ul li:first-child a {
+    border-top: 1px solid #bcdecb;
+    border-radius: 4px 4px 0 0;
+  }
+
+  #navigationMenu ul li:last-child a {
+    border-radius: 0 0 4px 4px;
+  }
+}
+
+@media (max-width: 500px) {
+  .col-xs-6 {
+    margin-left: 10%;
+    width: 80%;
+  }
+
+  #ctugLogo {
+    background: url(../images/header/logo-square.png) no-repeat;
+    background-size: contain;
+    margin-top: 5px;
+    height: 58px;
+  }
+
+  #blockChooseLanguage {
+    right: 25%;
+  }
+
+  .banner-section .block-text {
+    font-size: 13px;
+  }
+
+  .banner-section .block-text p {
+    line-height: 1.2em;
+  }
 }

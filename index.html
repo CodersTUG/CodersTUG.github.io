@@ -20,10 +20,10 @@
   <body ng-app="ctug">
     <header>
       <div id="header" class="content">
-        <a id="ctug-logo" href="index.html">
+        <a id="ctugLogo" href="index.html">
           <h1>Coders TUG</h1>
         </a>
-        <div id="block-social-buttons">
+        <div id="blockSocialButtons">
           <a class="btn btn-social-icon btn-soundcloud">
             <i class="fa eventbrite-logo"><span>Eventbrite</span></i>
           </a>
@@ -46,24 +46,25 @@
             <i class="fa fa-github"><span>GitHub</span></i>
           </a>
         </div>
-        <div id="block-choose-languages">
+        <div id="blockChooseLanguage">
           <ul>
             <li class="active"><a>EN</a></li>
             <li><a>IT</a></li>
           </ul>
         </div>
-        <div id="menuToggle" class="btn" data-toggle="collapse" data-target="#nav-collapse">
-          <i class="fa fa-bars"></i> MENU
+        <div id="menuToggle" class="btn" data-toggle="collapse" data-target="#navigationMenu">
+          <i class="fa fa-bars"></i>
+          <span>Menu</span>
         </div>
-        <div id="nav-collapse" class="collapse">
-          <nav id="menu">
-            <h1 class="hidden">Navigazione principale</h1>
-              <ul>
-                <li><a href="#aboutUs" class="js-menu active">About us</a></li>
-                <li><a href="#eventTypes" class="js-menu">AperiCoders and CoderJams</a></li>
-                <li><a href="#news" class="js-menu">News</a></li>
-                <li><a href="#pastEvents" class="js-menu">Past events</a></li>
-              </ul>
+        <div id="navigationMenu" class="collapse">
+          <nav>
+            <h1 class="hidden">Main navigation</h1>
+            <ul>
+              <li><a href="#aboutUs" class="js-menu active">About us</a></li>
+              <li><a href="#eventTypes" class="js-menu">Activities</a></li>
+              <li><a href="#news" class="js-menu">News</a></li>
+              <li><a href="#pastEvents" class="js-menu">Past events</a></li>
+            </ul>
           </nav>
         </div>
       </div>
@@ -81,7 +82,7 @@
         &copy; 2015 All rights reserved Coders TUG
       </div>
     </footer>
-    <div id="js-scripts">
+    <div id="jsScripts">
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
       <script src="assets/js/main.js"></script>
