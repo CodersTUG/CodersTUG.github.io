@@ -1,4 +1,5 @@
 $(window).load(function(){
+  //#pastEvents .block-item-post p
   // js-slider-item
   $('.js-slider-item').flexslider({
     animation: "slide",
@@ -32,16 +33,6 @@ $(window).load(function(){
     }
   });
 
-  // SHOW BOX
-  $(".js-collapse-box").hide();
-  $(".js-collapse-box").removeClass( "hidden" );
-  $(".js-show-element").click(function(){
-    $(this).next().slideToggle('fast', function(){
-      $(this).prev(".js-show-element").toggleClass("active");
-    });
-    return false;
-  });
-  
   $(".js-menu").click(function(e) {
       e.preventDefault();
       $('html, body').animate({ scrollTop: $(this.href).offset().top - 80 }, 600);
