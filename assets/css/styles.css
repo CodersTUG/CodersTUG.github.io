@@ -59,7 +59,7 @@ a:active  {
 }
 
 a:visited {
-  color: #e6e7ab;
+  text-decoration: underline;
 }
 
 
