@@ -315,7 +315,6 @@ a:visited {
 }
 
 .block-title {
-	text-align: center;
 	font-family: 'Titillium Web',sans-serif;
 	font-size: 20px;
 	color: #fff;
@@ -349,7 +348,6 @@ a:visited {
 }
 
 .block-item .block-title {
-	text-align: left;
 	padding: 0;
 	margin: 0;
 	font-size: 22px;
