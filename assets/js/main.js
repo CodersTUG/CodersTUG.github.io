@@ -12,5 +12,20 @@ $(window).load(function(){
     $('#navigationMenu').removeClass('in');
   });
 
-  //#pastEvents .block-item-post p
+  var padding = 15;
+  var maxHeight;
+  var toBeSameHeight = '#pastEvents .block-text';
+  $(window)
+    .on('resize', function () {
+      maxHeight = 10;
+
+      $(toBeSameHeight)
+        .height('auto')
+        .each(function () {
+          var thisEight = $(this).height();
+          maxHeight = thisEight > maxHeight ? thisEight : maxHeight;
+        })
+        .height(maxHeight);
+    })
+    .resize();
 });
