@@ -257,7 +257,7 @@ a:visited {
 }
 
 .row-section.green {
-	background: #9cb124;
+	background: #207a20;
 }
 
 .row-section.fucsia {
@@ -314,19 +314,34 @@ a:visited {
 	margin-top: -20px;
 }
 
+.block-item {
+  padding-bottom: 40px;
+}
+
 .block-title {
 	font-family: 'Titillium Web',sans-serif;
-	font-size: 20px;
+	font-size: 22px;
 	color: #fff;
 	text-transform: uppercase;
 	margin-bottom: 20px;
+	padding: 0;
+	margin: 0;
+	text-transform: none;
+}
+
+.row-section.green .block-title .highlight {
+  color: #0f0;
 }
 
 .block-text {
-  padding: 15px 0 0 0;
-	margin: 0 0 12px 0;
+  padding: 0;
+	margin: 8px 0 25px 0;
 	line-height: 1.4em;
   font-family: 'Titillium Web',sans-serif;
+}
+
+.row-section.green .block-text .highlight {
+  color: #0f0;
 }
 
 .banner-section .block-text {
@@ -343,31 +358,26 @@ a:visited {
 	line-height: 1.6em;
 }
 
-.block-item {
-  padding-bottom: 40px;
-}
-
-.block-item .block-title {
-	padding: 0;
-	margin: 0;
-	font-size: 22px;
-	text-transform: none;
-}
-
-.block-item .block-info {
+.block-info {
 	font-size: 16px;
+  padding: 5px 0;
 }
 
-.block-item .figure.pull-left {
+.figure {
+  position: relative;
+}
+
+.figure.pull-left {
 	margin-right: 15px;
 }
 
-.block-item .figure img {
+.figure img {
   width: 100%;
   border: 1px solid #fff;
+  margin: 8px 0;
 }
 
-.block-item .figure img:hover {
+.figure img:hover {
 	-moz-transition: all .4s ease-in-out;
 	-webkit-transition: all .4s ease-in-out;
 	-o-transition: all .4s ease-in-out;
@@ -378,7 +388,29 @@ a:visited {
 	filter: alpha(opacity=.5);
 }
 
-.block-item .link-btn {
+.figure .block-info {
+	text-transform: uppercase;
+  padding: 1px 10px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 1px;
+  right: 1px;
+  font-size: 14px;
+}
+
+.figure .block-info.top {
+  top: 9px;
+}
+
+.figure .block-info.bottom {
+  bottom: 9px;
+}
+
+.figure .block-info.invisible {
+  display: none;
+}
+
+.link-btn {
 	display: inline-block;
 	padding: 4px 12px;
 	line-height: 25px;
@@ -395,26 +427,26 @@ a:visited {
   width: 86px;
 }
 
-.block-item .link-btn.white {
+.link-btn.white {
 	border: 1px solid #fff;
 	color: #fff;
 }
 
-.block-item .link-btn.white:hover {
+.link-btn.white:hover {
 	border: 1px solid transparent;
 }
 
-.block-item .link-btn.black {
+.link-btn.black {
 	border: 1px solid #000;
 	color: #000;
 }
 
-.block-item .link-btn.black:hover {
+.link-btn.black:hover {
 	border: 1px solid transparent;
 }
 
 .twitter-timeline {
-  height: 416px;
+  height: 525px;
 }
 
 
