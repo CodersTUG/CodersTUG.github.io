@@ -331,12 +331,16 @@ a:visited {
 
 .block-title {
 	font-family: 'Titillium Web',sans-serif;
-	font-size: 22px;
+	font-size: 21px;
 	color: #fff;
 	text-transform: uppercase;
 	padding: 0;
 	margin: 0;
 	text-transform: none;
+}
+
+#pastEvents .block-title {
+  white-space: nowrap;
 }
 
 .row-section.green .block-title .highlight {
@@ -459,6 +463,11 @@ a:visited {
   height: 525px;
 }
 
+.goto-github {
+  padding: 2px;
+}
+
+
 
 #footer {
 	min-height: 70px;
@@ -473,6 +482,10 @@ a:visited {
 @media (min-width: 1600px) {
   .col-xl-offset-1 {
     margin-left: 8%;
+  }
+
+  .col-xl-2_5 {
+    width: 20%;
   }
 
   .col-xl-3 {
