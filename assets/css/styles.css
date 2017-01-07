@@ -123,6 +123,14 @@ a:visited {
   left: 7px;
 }
 
+#blockSocialButtons .gitter-logo,
+#blockSocialButtons .gitter-logo:hover  {
+  background: url(../images/header/gitter-white.png);
+  background-repeat: no-repeat;
+  top: 7px;
+  left: 7px;
+}
+
 #blockSocialButtons span {
   position: absolute;
   text-indent: -9999px;
