@@ -1,61 +1,61 @@
 body {
-	background-color: #fff;
-	font-family: 'Open Sans',sans-serif;
-	font-size: 16px;
-	color: #333;
-	overflow-x: hidden;
+  background-color: #fff;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 16px;
+  color: #333;
+  overflow-x: hidden;
 }
 
 * {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .content {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	margin: 0 auto;
-	position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
 }
 
 ::selection {
-	background: #a99aa9;
-	color: #effeef;
+  background: #a99aa9;
+  color: #effeef;
 }
 
 h1,h2,h3,h4 {
-	font-weight: lighter;
-	line-height: 1em;
-	padding: 0;
-	margin: 0;
-	color: #333;
+  font-weight: lighter;
+  line-height: 1em;
+  padding: 0;
+  margin: 0;
+  color: #333;
 }
 
 img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 a {
-	color: #fff;
-	text-decoration: none;
-	outline: none;
+  color: #fff;
+  text-decoration: none;
+  outline: none;
 }
 
 a:hover,
 a:focus,
 a:active  {
-	color: #fff;
-	text-decoration: none;
-	-moz-transition: all .4s ease-in-out;
-	-webkit-transition: all .4s ease-in-out;
-	-o-transition: all .4s ease-in-out;
-	transition: all .4s ease-in-out;
-	backface-visibility: hidden;
-	webkit-backface-visibility: hidden;
-	opacity: .5;
-	filter: alpha(opacity=.5);
+  color: #fff;
+  text-decoration: none;
+  -moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  backface-visibility: hidden;
+  webkit-backface-visibility: hidden;
+  opacity: .5;
+  filter: alpha(opacity=.5);
 }
 
 a:visited {
@@ -66,53 +66,53 @@ a:visited {
 
 #header {
   z-index: 1;
-	position: fixed;
-	height: 115px;
+  position: fixed;
+  height: 115px;
   background: #f9f9f9;
-	border-bottom: 1px solid #a9a9a9;
-	width: 100%;
+  border-bottom: 1px solid #a9a9a9;
+  width: 100%;
 }
 
 #ctugLogo {
-	background: url(../images/header/logo-horizontal.png) no-repeat;
+  background: url(../images/header/logo-horizontal.png) no-repeat;
   background-size: contain;
-	width: 350px;
-	display: block;
-	float: left;
-	margin: 40px 0 -35px 15px;
-	text-indent: -9999px;
+  width: 350px;
+  display: block;
+  float: left;
+  margin: 40px 0 -35px 15px;
+  text-indent: -9999px;
 }
 
 #blockSocialButtons {
   float: left;
-	margin: 36px 15px 0 35px;
+  margin: 36px 15px 0 35px;
 }
 
 #blockSocialButtons ul {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 #blockSocialButtons ul li {
-	display: inline;
+  display: inline;
 }
 
 #blockSocialButtons ul li a {
   padding: 1px 8px;
-	display: inline-block;
+  display: inline-block;
   font-size: 28px;
-	-moz-transition: all .4s ease-in-out;
-	-webkit-transition: all .4s ease-in-out;
-	-o-transition: all .4s ease-in-out;
-	transition: all .4s ease-in-out;
-	backface-visibility: hidden;
-	webkit-backface-visibility: hidden;
-	margin-right: 6px;
+  -moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  backface-visibility: hidden;
+  webkit-backface-visibility: hidden;
+  margin-right: 6px;
 }
 
 #blockSocialButtons ul li a:hover {
-	opacity: .5;
-	filter: alpha(opacity=.5);
+  opacity: .5;
+  filter: alpha(opacity=.5);
 }
 
 #blockSocialButtons .eventbrite-logo,
@@ -137,60 +137,60 @@ a:visited {
 }
 
 #blockChooseLanguage {
-	position: absolute;
-	top: 6px;
-	right: 15px;
+  position: absolute;
+  top: 6px;
+  right: 15px;
 }
 
 #blockChooseLanguage ul {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 #blockChooseLanguage ul li {
-	list-style: none;
-	display: inline;
+  list-style: none;
+  display: inline;
 }
 
 #blockChooseLanguage ul li a {
-	display: inline-block;
-	font-family: 'Titillium Web',sans-serif;
-	text-transform: uppercase;
-	color: #a9a9a9;
-	font-size: 16px;
-	padding: 3px 12px;
-	line-height: 21px;
-	border: 1px solid transparent;
-	cursor: pointer;
-	float: left;
-	-moz-transition: all .4s ease-in-out;
-	-webkit-transition: all .4s ease-in-out;
-	-o-transition: all .4s ease-in-out;
-	transition: all .4s ease-in-out;
-	backface-visibility: hidden;
-	webkit-backface-visibility: hidden;
+  display: inline-block;
+  font-family: 'Titillium Web',sans-serif;
+  text-transform: uppercase;
+  color: #a9a9a9;
+  font-size: 16px;
+  padding: 3px 12px;
+  line-height: 21px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  float: left;
+  -moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  backface-visibility: hidden;
+  webkit-backface-visibility: hidden;
 }
 
 #blockChooseLanguage ul li.active a,
 #blockChooseLanguage ul li a:active {
-	border: 1px solid #9cb124;
+  border: 1px solid #9cb124;
   color: #9cb124;
   text-decoration: none;
 }
 
 #blockChooseLanguage ul li a:hover {
-	border: 1px solid #595959;
+  border: 1px solid #595959;
   color: #595959;
-	text-decoration: none;
+  text-decoration: none;
 }
 
 #menuToggle {
-	display: none;
+  display: none;
 }
 
 #navigationMenu {
-	position: absolute;
-	top: 85px;
+  position: absolute;
+  top: 85px;
   left: 0;
 }
 
@@ -199,69 +199,69 @@ a:visited {
 }
 
 #navigationMenu ul {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 #navigationMenu ul li {
-	display: inline;
+  display: inline;
 }
 
 #navigationMenu ul li a {
-	display: inline-block;
-	font-family: 'Titillium Web',sans-serif;
-	text-transform: uppercase;
-	color: #9cb124;
-	font-size: 16px;
-	padding: 0 20px;
-	line-height: 25px;
-	border: 0;
-	cursor: pointer;
-	float: left;
-	-moz-transition: all .4s ease-in-out;
-	-webkit-transition: all .4s ease-in-out;
-	-o-transition: all .4s ease-in-out;
-	transition: all .4s ease-in-out;
-	backface-visibility: hidden;
-	webkit-backface-visibility: hidden;
+  display: inline-block;
+  font-family: 'Titillium Web',sans-serif;
+  text-transform: uppercase;
+  color: #9cb124;
+  font-size: 16px;
+  padding: 0 20px;
+  line-height: 25px;
+  border: 0;
+  cursor: pointer;
+  float: left;
+  -moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  backface-visibility: hidden;
+  webkit-backface-visibility: hidden;
 }
 
 #navigationMenu ul li.active a,
 #navigationMenu ul li a:active,
 #navigationMenu ul li a:hover {
   color: #595959;
-	text-decoration: none;
+  text-decoration: none;
 }
 
 
 
 #main {
-	position: relative;
+  position: relative;
   padding-top: 115px;
 }
 
 .banner-section {
-	height: 350px;
-	position: relative;
-	background: url(../images/section-about/banner.jpg) no-repeat;
+  height: 350px;
+  position: relative;
+  background: url(../images/section-about/banner.jpg) no-repeat;
   background-position: 0 50%;
-	background-size: cover;
+  background-size: cover;
 }
 
 .overlay {
   background: rgba(0, 0, 0, 0.5);
-	height: 330px;
+  height: 330px;
   width: 98%;
   max-width: 480px;
   position: absolute;
   top: 10px;
-  left: 1%;  
+  left: 1%;
 }
 
 .row-section {
-	padding: 25px 0;
-	background: #fff;
-	color: #fff;
+  padding: 25px 0;
+  background: #fff;
+  color: #fff;
 }
 
 .row-section.white,
@@ -271,39 +271,39 @@ a:visited {
 .row-section.white .section-title a,
 .row-section.white .block-title a,
 .row-section.white p a {
-	color: #333;
+  color: #333;
 }
 
 .row-section.green {
-	background: #207a20;
+  background: #207a20;
 }
 
 .row-section.fucsia {
-	background: #ca1856;
+  background: #ca1856;
 }
 
 .row-section.darkred{
-	background: #A61818;
+  background: #A61818;
 }
 
 .row-section.gray {
-	background: #333;
+  background: #333;
 }
 
 .section-title {
-	text-align: center;
-	font-family: 'Titillium Web',sans-serif;
-	font-size: 35px;
-	color: #fff;
-	text-transform: uppercase;
-	margin-bottom: 25px;
+  text-align: center;
+  font-family: 'Titillium Web',sans-serif;
+  font-size: 35px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 25px;
 }
 
 .banner-section .section-title {
   position: relative;
   display: inline-block;
   max-width: 450px;
-	margin: 10px 0 0 5px;
+  margin: 10px 0 0 5px;
   padding: 0;
   border: none;
   font: normal 35px/normal "Audiowide", Helvetica, sans-serif;
@@ -320,17 +320,17 @@ a:visited {
 }
 
 #eventTypes .section-title {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .section-subtitle {
-	text-align: center;
-	font-family: 'Titillium Web',sans-serif;
-	font-size: 25px;
-	color: #fff;
-	text-transform: none;
-	margin-bottom: 25px;
-	margin-top: -20px;
+  text-align: center;
+  font-family: 'Titillium Web',sans-serif;
+  font-size: 25px;
+  color: #fff;
+  text-transform: none;
+  margin-bottom: 25px;
+  margin-top: -20px;
 }
 
 .block-item {
@@ -338,13 +338,13 @@ a:visited {
 }
 
 .block-title {
-	font-family: 'Titillium Web',sans-serif;
-	font-size: 21px;
-	color: #fff;
-	text-transform: uppercase;
-	padding: 0;
-	margin: 0;
-	text-transform: none;
+  font-family: 'Titillium Web',sans-serif;
+  font-size: 21px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  text-transform: none;
 }
 
 #pastEvents .block-title {
@@ -357,8 +357,8 @@ a:visited {
 
 .block-text {
   padding: 0;
-	margin: 8px 0 25px 0;
-	line-height: 1.4em;
+  margin: 8px 0 25px 0;
+  line-height: 1.4em;
   font-family: 'Titillium Web',sans-serif;
 }
 
@@ -367,7 +367,7 @@ a:visited {
 }
 
 .banner-section .block-text {
-	padding: 5px 20px;
+  padding: 5px 20px;
   font-family: 'Titillium Web',sans-serif;
   font-size: 16px;
   color: #fff;
@@ -375,13 +375,13 @@ a:visited {
 }
 
 .banner-section .block-text p {
-	padding: 4px 0;
-	margin: 0;
-	line-height: 1.6em;
+  padding: 4px 0;
+  margin: 0;
+  line-height: 1.6em;
 }
 
 .block-info {
-	font-size: 16px;
+  font-size: 16px;
   padding: 5px 0;
 }
 
@@ -390,7 +390,7 @@ a:visited {
 }
 
 .figure.pull-left {
-	margin-right: 15px;
+  margin-right: 15px;
 }
 
 .figure img {
@@ -400,18 +400,18 @@ a:visited {
 }
 
 .figure img:hover {
-	-moz-transition: all .4s ease-in-out;
-	-webkit-transition: all .4s ease-in-out;
-	-o-transition: all .4s ease-in-out;
-	transition: all .4s ease-in-out;
-	backface-visibility: hidden;
-	webkit-backface-visibility: hidden;
-	opacity: .5;
-	filter: alpha(opacity=.5);
+  -moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  backface-visibility: hidden;
+  webkit-backface-visibility: hidden;
+  opacity: .5;
+  filter: alpha(opacity=.5);
 }
 
 .figure .block-info {
-	text-transform: uppercase;
+  text-transform: uppercase;
   padding: 1px 10px;
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -433,38 +433,38 @@ a:visited {
 }
 
 .link-btn {
-	display: inline-block;
-	padding: 4px 12px;
-	line-height: 25px;
-	font-family: 'Titillium Web',sans-serif;
-	text-transform: uppercase;
-	font-size: 20px;
-	-moz-transition: all .4s ease-in-out;
-	-webkit-transition: all .4s ease-in-out;
-	-o-transition: all .4s ease-in-out;
-	transition: all .4s ease-in-out;
-	backface-visibility: hidden;
-	webkit-backface-visibility: hidden;
-	text-align: center;
+  display: inline-block;
+  padding: 4px 12px;
+  line-height: 25px;
+  font-family: 'Titillium Web',sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  -moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  backface-visibility: hidden;
+  webkit-backface-visibility: hidden;
+  text-align: center;
   width: 86px;
 }
 
 .link-btn.white {
-	border: 1px solid #fff;
-	color: #fff;
+  border: 1px solid #fff;
+  color: #fff;
 }
 
 .link-btn.white:hover {
-	border: 1px solid transparent;
+  border: 1px solid transparent;
 }
 
 .link-btn.black {
-	border: 1px solid #000;
-	color: #000;
+  border: 1px solid #000;
+  color: #000;
 }
 
 .link-btn.black:hover {
-	border: 1px solid transparent;
+  border: 1px solid transparent;
 }
 
 .goto-github {
@@ -474,14 +474,16 @@ a:visited {
 
 
 #footer {
-	min-height: 70px;
-	background: #fff;
-	padding-top: 25px;
+  min-height: 70px;
+  background: #fff;
+  padding-top: 25px;
 }
-
-
-
-
+  
+@media (min-width: 1200px) {
+  .col-lg-3 {
+    width: 20%;
+  }
+}
 
 @media (min-width: 1600px) {
   .col-xl-3 {
@@ -500,7 +502,7 @@ a:visited {
   #ctugLogo {
     margin: 20px 0 -35px 15px;
   }
-  
+
   #blockSocialButtons {
     white-space: nowrap;
     margin: 70px 15px 0 20px;
@@ -525,7 +527,7 @@ a:visited {
     line-height: 21px;
     background: #333;
   }
-  
+
   #menuToggle span {
     position: absolute;
     text-indent: -9999px;
@@ -534,7 +536,7 @@ a:visited {
   #navigationMenu {
     top: 49px;
     left: auto;
-    right: 20px;  
+    right: 20px;
     background: #333;
     border-radius: 4px;
   }
@@ -546,7 +548,7 @@ a:visited {
   #navigationMenu ul li {
     display: block;
   }
-  
+
   #navigationMenu ul li a {
     color: #fff;
     border: 1px solid #bcdecb;
